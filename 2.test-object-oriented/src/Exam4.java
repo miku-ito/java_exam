@@ -1,6 +1,6 @@
 public class Exam4 {
     public static void main(String[] args) {
-        int result1 =  Calculation.addition(5.3);
+        int result1 =  Calculation.addition(5,3);
         int result2 = Calculation.subtraction(5,3);
         int result3 = Calculation.multiplication(5,3);
         int result4 = Calculation.division(5,3);

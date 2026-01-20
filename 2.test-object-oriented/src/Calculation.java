@@ -1,4 +1,4 @@
-public class Caluclation {
+public class Calculation {
     static int addition(int num1, int num2) {
         return(num1 + num2);
     }

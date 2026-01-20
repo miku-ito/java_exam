@@ -1,8 +1,10 @@
 public class Exam3 {
-    Student student = new Student();
+    public static void main(String[] args) {
+        Student student = new Student();
 
-    student.study();
-    student.study();
-    student.sleep();
-    student.sleep();
+        student.study();
+        student.study();
+        student.sleep();
+        student.sleep();
+    }
 }
