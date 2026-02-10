@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>数字を入れてください</h3>
+    <form th:action="@{exam02/output}" th:object="exam02Form">
+        <input type="number" name="number1" th:field="number1">
+        +
+        <input type="number" name="number2" th:field="number2">
+        <button type="submit">足し算をする</button>
+    </form>
+</body>
+</html>

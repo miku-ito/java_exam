@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/exam04")
-public class ReceiveNameController {
+public class ReceiveNameController2 {
 
     @ModelAttribute
 	public ReceiveNameForm setUpForm() {

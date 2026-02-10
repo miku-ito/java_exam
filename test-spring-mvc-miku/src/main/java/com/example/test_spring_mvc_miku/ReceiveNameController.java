@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/exam03")
-public class Exam03Controller {
+public class ReceiveNameController {
 
     @RequestMapping("") 
     public String index() {
