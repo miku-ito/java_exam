@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+div{
+    color: white;
+    width: 200px;
+    
+}
+
+.number1{
+    background-color: red;
+}
+
+.number2{
+    background-color: green;
+}

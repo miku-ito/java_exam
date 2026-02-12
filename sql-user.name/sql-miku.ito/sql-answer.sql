@@ -1,0 +1,49 @@
+--問題1
+INSERT INTO items(id, category_id, name, price) 
+VALUES(13, 1, '鰯', 150),
+(14, 2, '羊', 650);
+
+SELECT * FROM items;
+
+--問題2
+UPDATE items SET price = price * 0.9;
+SELECT * FROM items;
+
+--問題3
+DELETE FROM employees WHERE end_date <= '2013-3-31';
+SELECT * FROM employees;
+
+--問題4
+SELECT MIN(start_date) FROM employees; 
+
+--問題5
+SELECT * FROM regions;
+SELECT * FROM prefectures;
+SELECT r.name, p.name FROM regions r INNER JOIN prefectures p ON r.code = p.region_code;
+
+--問題6
+SELECT * FROM populations;
+SELECT sum(population) FROM populations;
+
+--問題7
+SELECT * FROM genders;
+SELECT * FROM populations;
+SELECT * FROM prefectures;
+
+WITH gender_code AS(
+SELECT gender_code,
+CASE gender_code
+when 'm' THEN '男'
+when 'f' THEN '女'
+ELSE 'other'
+end
+FROM populations
+)
+SELECT pr.name prefecture, gender_code gender, po.population 
+FROM prefectures pr 
+INNER JOIN populations po 
+ON pr.region_code = po.prefecture_code
+WHERE pr.region_code = 80;
+
+--問題8
+SELECT * FROM generations;
