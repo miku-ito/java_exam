@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        私の名前は<span th:text="${member.name}"></span>です。
+    </p>
+    <p>
+        <span th:if="${member.age >= 20}" th:text="成人"></span>
+        <span th:unless="${member.age >= 20}" th:text="未成年"></span>
+        です。
+    </p>
+    <p>
+        趣味は「<span th:each="hobby : ${member.hobbyList}">
+            <span th:text="${hobby}"></span>
+        </span>
+        」です。
+    </p>
+</body>
+</html>
